@@ -7,7 +7,7 @@ public class Main {
 
         Scanner sc = new Scanner(System.in);
         List<Users> users = new ArrayList<>();
-        Id gerador = new Id();
+
 
         System.out.println("quantos usuarios vc deseja adicionar: ");
         int n = sc.nextInt();
@@ -19,9 +19,9 @@ public class Main {
         System.out.println("Digite o seu email: ");
         String email = sc.nextLine();
 
-        int id = gerador.imprimirIdGerado();
+        ;
 
-        Users user =new Users(id,name,email);
+        Users user =new Users(name,email);
             users.add(user);
         }
 

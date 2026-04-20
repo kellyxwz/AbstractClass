@@ -1,25 +1,14 @@
-import java.util.ArrayList;
-import java.util.List;
+import java.util.UUID;
 
-public class Users {
+public class Users extends AbstractEntity {
 
-    private Integer id;
     private String name;
     private String email;
+    protected UUID id;
 
-
-    public Users(Integer id, String name, String email) {
-        this.id = id;
+    public Users(String name, String email) {
         this.name = name;
         this.email = email;
-    }
-
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
     }
 
     public String getName() {
@@ -40,7 +29,7 @@ public class Users {
 
     @Override
     public String toString() {
-        return "ID: " + id +
+        return "ID: " + getId() +
                 ", Nome: " + name +
                 ", Email: " + email;
     }
