@@ -4,7 +4,6 @@ public class Users extends AbstractEntity {
 
     private String name;
     private String email;
-    protected UUID id;
 
     public Users(String name, String email) {
         this.name = name;
@@ -29,9 +28,9 @@ public class Users extends AbstractEntity {
 
     @Override
     public String toString() {
-        return "ID: " + getId() +
-                ", Nome: " + name +
-                ", Email: " + email;
+        return "ID: " + getId() + "\n"+
+                "Nome: " + name + "\n"+
+                "Email: " + email;
     }
 
 }

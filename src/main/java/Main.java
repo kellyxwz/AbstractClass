@@ -13,17 +13,15 @@ public class Main {
         int n = sc.nextInt();
         sc.nextLine();
 
-        for(int i=0 ; i<n; i++){
-        System.out.println("Digite o seu nome: ");
-        String name = sc.nextLine();
-        System.out.println("Digite o seu email: ");
-        String email = sc.nextLine();
+            for(int i=0 ; i<n; i++){
+                System.out.println("Digite o seu nome: ");
+                String name = sc.nextLine();
+                System.out.println("Digite o seu email: ");
+                String email = sc.nextLine();
 
-        ;
-
-        Users user =new Users(name,email);
-            users.add(user);
-        }
+                Users user =new Users(name,email);
+                users.add(user);
+            }
 
         System.out.println(users);
     }
